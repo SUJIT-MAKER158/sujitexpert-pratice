@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+    <style>
+        #navbar
+        {
+            background-color: black;
+            padding: 5px;
+            border-radius: 30px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li
+        {
+            list-style: none;
+        }
+        a{text-decoration: none;
+           font-size: 20px;
+           color:white;
+        }
+        .container
+        {
+            background-color: aqua;
+            border:2px solid black;
+            display:flex;
+
+
+        }
+        div{
+            width: 200pxpx;
+            height: 200pxpx;
+            background-color: blue;
+            margin: 2px;
+        }
+        .box{
+            background-color: aqua;
+             display: flex;
+             height: 500px;
+             justify-content: center; 
+             align-items: center;
+            
+        }
+        #box1
+        {
+          height:100px;
+          width:100px;
+          background-color: blue;
+        }
+        #box2
+        {
+          height:100px;
+          width:100px;
+          background-color: red;
+          align-self: flex-end;
+
+        }
+        #box3
+        {
+            
+          height:100px;
+          width:100px;
+          background-color: rgb(145, 145, 188);
+        }
+        
+    </style>
+</head>
+<body>
+        <nav id="navbar">
+            <ul >
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- use flexbox to create div inside another div -->
+        <div class="container">
+            <div >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque suscipit totam quis quae dolorum. Odio minus voluptatem nemo, cupiditate dicta velit consequatur beatae reprehenderit eligendi nam reiciendis suscipit, corrupti, magnam ab illum qui quia!
+            </div>
+            <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quos voluptatibus? Quibusdam est, reprehenderit suscipit accusamus, harum, alias blanditiis animi consequuntur explicabo vel culpa repellendus! Consectetur minus repellendus quia id nam explicabo voluptate quaerat?</div>
+            <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, velit molestiae. Eaque animi, fuga assumenda veniam eum molestias culpa accusantium ab doloribus hic non neque distinctio voluptate ad adipisci sed quod illum placeat ut?</div>
+        </div>
+        <!-- which has bigger priority align-item or align-self -->
+        <div class="box">
+            <div id="box1">box1</div>
+            <div id="box2">box2</div>
+            <div id="box3">box3</div>
+        </div>
+        <!-- THIS EXAMPLE SHOWS THAT align-self is high priority than align-items -->
+</body>
+</html>
